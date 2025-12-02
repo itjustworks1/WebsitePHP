@@ -1,0 +1,47 @@
+body{
+    /*background: url('golden-glow-lights-dark-background_23-2151831327.jpg');*/
+    background: darkgreen;
+    background-size: 100%;
+    margin: 0;
+}
+nav, article, sidebar{
+    background: lightgrey;
+}
+main{
+    /*border: 10px yellow solid;*/
+    /*float: right;*/
+    position: static;
+    margin-left: 23%;
+    width: 75%;
+}
+sidebar{
+    /*border: 5px red solid;*/
+    width: 20%;
+    float: left;
+}
+article{
+    width: 100%;
+}
+header{
+    background: lawngreen;
+    height: 80px;
+}
+footer{
+    text-align: center;
+    padding: 1px;
+    background: gray;
+}
+nav{
+
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em;
+    background-color: #d7d5d5;
+}
+.calculate{
+    background: lightgray;
+    width: fit-content;
+}
+.article {
+    margin-bottom: 2em;
+}

@@ -1,0 +1,20 @@
+[
+  {
+      "id": 1,
+    "title": "Cucumber",
+    "description": "эта статья про огурцы!!",
+    "cover_image": "public/content/Media/cucumber.png",
+    "content": "# Я люблю ОГУРЦЫ\n\nCucumber Cucumber Cucumber\n\n* Cucumber\n* Cucumber\n* Cucumber",
+    "category": "Образование",
+    "filename": "post1.html"
+  },
+  {
+      "id": 2,
+    "title": "Cucumber1",
+    "description": "эта статья про огурцы!! v2",
+    "cover_image": "public/content/Media/cucumber1.png",
+    "content": "# Я люблю ОГУРЦЫ\n\nCucumber Cucumber Cucumber\n\n* Cucumber\n* Cucumber\n* Cucumber",
+    "category": "Здоровье",
+    "filename": "post2.html"
+  }
+]
