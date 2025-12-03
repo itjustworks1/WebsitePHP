@@ -1,0 +1,37 @@
+{% extends '/cucumber/layout.html.twig' %}
+
+{% block content %}
+
+<H1> Article</H1>
+        <div class="container" style="background-size: cover; background-repeat: no-repeat;">
+            <div class="row gy-4 gx-5" style="background-size: cover; background-repeat: no-repeat;">
+                <div class="col-md-6" style="background-size: cover; background-repeat: no-repeat;">
+                    <div id="sync1" class="owl-carousel owl-theme owl-loaded owl-drag" style="background-size: cover; background-repeat: no-repeat;">
+
+
+
+                        <div class="owl-stage-outer" style="background-size: cover; background-repeat: no-repeat;">
+                            <div class="owl-stage" style="transform: translate3d(-1992px, 0px, 0px); transition: all; width: 7304px; background-size: cover; background-repeat: no-repeat;">
+                                <div class="owl-item active" style="width: 664px; background-size: cover; background-repeat: no-repeat;">
+                                    <div class="item" style="background-size: cover; background-repeat: no-repeat;">
+                                        <img src="/{{ article.cover_image }}" class="w-100" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-dots disabled" style="background-size: cover; background-repeat: no-repeat;">
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6" style="background-size: cover; background-repeat: no-repeat;">
+                    <h2 class="fs-40">{{ article.title }}</h2>
+                    <p class="col-lg-10">{{ article.content|raw }}</p>
+
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

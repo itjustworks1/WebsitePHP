@@ -18,8 +18,9 @@ $request = Laminas\Diactoros\ServerRequestFactory::fromGlobals(
 );
 
 
-$router->get('/', 'App\Controllers\ArticleController::showArticlesList');
-$router->get('/articles/{id}', 'App\Controllers\ArticleController::article');
+$router->get('/', 'App\Controllers\ArticleController::showHomePage');
+$router->get('/articles', 'App\Controllers\ArticleController::showArticlesList');
+$router->get('/article/{id}', 'App\Controllers\ArticleController::article');
 $router->get('/calc/{result}', 'App\Controllers\CalculateController::showResult');
 
 

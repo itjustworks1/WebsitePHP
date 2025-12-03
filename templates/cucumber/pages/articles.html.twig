@@ -1,0 +1,34 @@
+{% extends '/cucumber/layout.html.twig' %}
+
+{% block content %}
+
+<H1> Articles List</H1>
+    <div class="row g-4" style="background-size: cover; background-repeat: no-repeat;">
+
+    {% for article in articles %}
+
+    <div class="rounded-1 bg-light overflow-hidden" style="background-size: cover; background-repeat: no-repeat; padding-left: 0px">
+        <div class="row g-0" style="background-size: cover; background-repeat: no-repeat;">
+            <div class="col-sm-6" style="background-size: cover; background-repeat: no-repeat;">
+                <div class="auto-height relative bgcustom" data-bgimage="url({{ article.cover_image }})" style="background: url(&quot;{{ article.cover_image }}&quot;) 0% 0% / cover no-repeat;">
+                    <div class="abs start-0 top-0 bg-color-2 text-white p-3 pb-2 m-3 text-center fw-600 rounded-5px" style="background-size: cover; background-repeat: no-repeat;">
+                        <div class="fs-36 mb-0" style="background-size: cover; background-repeat: no-repeat;">03</div>
+                        <span>Декабря</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 relative" style="background-size: cover; background-repeat: no-repeat;">
+                <div class="p-30 pb-60" style="background-size: cover; background-repeat: no-repeat;">
+                    <h4><a class="text-dark" href="/article/{{ article.id }}">{{ article.title }}</a></h4>
+                    <p class="mb-0">{{ article.description }}</p>
+
+                    <div class="abs bottom-0 pb-20" style="background-size: cover; background-repeat: no-repeat;">
+                        <div class="d-inline fs-14 fw-600 me-3" style="background-size: cover; background-repeat: no-repeat;"><i class="icofont-chat id-color-2 me-2"></i>10 Comments</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+    </div>
+{% endblock %}

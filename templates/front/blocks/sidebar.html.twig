@@ -1,5 +1,7 @@
 <sidebar>
     <ol>
-        {{ dataS}}
+        {% for article in articles %}
+            <li><a href="#{{ article.title }}">{{ article.title }}</a></li>
+        {% endfor %}
     </ol>
 </sidebar>

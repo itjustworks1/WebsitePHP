@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Gardyn — Garden and Landscape Website Template</title>
+    <link rel="icon" href="/assets/cucumber/images/icon.webp" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta content="Gardyn — Garden and Landscape Website Template" name="description" >
+    <meta content="" name="keywords" >
+    <meta content="" name="author" >
+    <!-- CSS Files
+    ================================================== -->
+    <link href="/assets/cucumber/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="/assets/cucumber/css/plugins.css" rel="stylesheet" type="text/css" >
+    <link href="/assets/cucumber/css/style.css" rel="stylesheet" type="text/css" >
+    <link href="/assets/cucumber/css/coloring.css" rel="stylesheet" type="text/css" >
+    <!-- color scheme -->
+    <link id="colors" href="/assets/cucumber/css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <a href="#" id="back-to-top"></a>
+        
+        <!-- preloader begin -->
+        <div id="de-loader"></div>
+        <!-- preloader end -->
+
+        <!-- header begin -->
+        {% include '/cucumber/block/header.html.twig' %}
+        <!-- header end -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+
+            <div id="top"></div>
+
+
+            {% include '/cucumber/block/subheader.html.twig' %}
+            <section>
+                <div class="container">
+                    <div class="row gx-5">
+                        <div class="col-lg-8">
+
+                                {% block content %}
+                                {% endblock %}
+
+
+                        </div>
+
+                        <div class="col-lg-4">
+                            {% include '/cucumber/block/sidebar.html.twig' %}
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+        <!-- content end -->
+        
+        <!-- footer begin -->
+        {% include '/cucumber/block/footer.html.twig' %}
+        <!-- footer end -->
+    </div>
+
+
+
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="/assets/cucumber/js/plugins.js"></script>
+    <script src="/assets/cucumber/js/designesia.js"></script>
+{% block js %}{% endblock %}
+
+</body>
+
+</html>

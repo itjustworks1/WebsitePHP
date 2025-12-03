@@ -16,5 +16,14 @@
     "content": "# Я люблю ОГУРЦЫ\n\nCucumber Cucumber Cucumber\n\n* Cucumber\n* Cucumber\n* Cucumber",
     "category": "Здоровье",
     "filename": "post2.html"
+  },
+  {
+      "id": 3,
+    "title": "Cucumber 3",
+    "description": "эта статья про огурцы!! v3",
+    "cover_image": "public/content/Media/i.jpeg",
+    "content": "# Я люблю ОГУРЦЫ\n\nCucumber Cucumber Cucumber\n\n* Cucumber\n* Cucumber\n* Cucumber",
+    "category": "Здоровье",
+    "filename": "post2.html"
   }
 ]

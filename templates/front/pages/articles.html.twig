@@ -1,11 +1,14 @@
 {% extends 'front/layout.html.twig' %}
 {% block main %}
-    {% for article in articles %}
+    {{ include ('front/blocks/sidebar.html.twig') }}
+    <main>
+        {% for article in articles %}
 
-        <article>
-            <h4 class="title"><a href="/articles/{{ article.id }}">{{ article.title }}</a></h4>
-            <img src="{{ article.cover_image }}">
-            <p>{{ article.content|raw }}</p>
-        </article>
-    {% endfor %}
+            <article>
+                <h4 class="title"><a href="/articles/{{ article.id }}" name="{{ article.title }}">{{ article.title }}</a></h4>
+                <img src="{{ article.cover_image }}">
+                <p>{{ article.content|raw }}</p>
+            </article>
+        {% endfor %}
+    </main>
 {% endblock %}

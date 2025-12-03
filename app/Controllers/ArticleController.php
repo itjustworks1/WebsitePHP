@@ -29,6 +29,12 @@ class ArticleController
 
     }
 
+    public function showHomePage(): ResponseInterface
+    {
+        //$articles = $this->postRepository->all();
+        $html = $this->articleView->showHomePage();
+        return $this->responseWrapper($html);
+    }
     public function showArticlesList(): ResponseInterface
     {
         $articles = $this->postRepository->all();
